@@ -1,0 +1,33 @@
+.product-card {
+  padding: 0 15px 50px 15px;
+  width: 100%;
+  &__model-image {
+    // margin: 0 67px 0 67px;
+    display: block;
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    padding-top: 1.8rem;
+  }
+
+  &__price {
+    font-size: 12px;
+  }
+
+  &__style {
+    font-size: 12px;
+  }
+
+  &__colour {
+    height: 2rem;
+    width: fit-content;
+
+    &--position {
+      position: absolute;
+      left: 1px;
+    }
+  }
+}

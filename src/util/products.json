@@ -1,0 +1,18 @@
+[
+  {
+    "model": "../../assets/images/model1.jpg",
+    "product": "MEN'S HURON PANT",
+    "style": "New Style | Slim",
+    "price": "£195.00",
+    "colour1": "../../assets/images/product-colour-black.svg",
+    "colour2": "../../assets/images/product-colour-grey.svg"
+  },
+  {
+    "model": "../../assets/images/model1.jpg",
+    "product": "MEN'S HURON PANT",
+    "style": "New Style | Slim",
+    "price": "£195.00",
+    "colour1": "../../assets/images/product-colour-black.svg",
+    "colour2": "../../assets/images/product-colour-grey.svg"
+  }
+]
