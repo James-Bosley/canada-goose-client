@@ -1,9 +1,5 @@
-import React from "react";
-
-import ProductColourBlack from "../../assets/images/product-colour-black.svg";
-import ProductColourGrey from "../../assets/images/product-colour-grey.svg";
-
 import "./productCard.scss";
+
 const ProductCard = props => {
   const { price, model, product, style, colour1, colour2 } = props.product;
 

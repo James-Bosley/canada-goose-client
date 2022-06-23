@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "model": "../../assets/images/model1.jpg",
     "product": "MEN'S HURON PANT",
     "style": "New Style | Slim",
@@ -8,6 +9,7 @@
     "colour2": "../../assets/images/product-colour-grey.svg"
   },
   {
+    "id": 2,
     "model": "../../assets/images/model1.jpg",
     "product": "MEN'S HURON PANT",
     "style": "New Style | Slim",
