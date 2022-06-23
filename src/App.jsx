@@ -4,15 +4,16 @@ import Header from "./components/header/Header";
 import HomePage from "./pages/HomePage";
 import ProductListing from "./pages/ProductListing";
 import ItemDetail from "./pages/ItemDetail";
+import productData from "./util/products.json";
 import "./app.scss";
 
 const App = () => {
-  const [itemsInBasket, setItemsInBasket] = useState([{}]);
+  const [itemsInBasket, setItemsInBasket] = useState([{}, {}]);
 
   const [itemList, setItemList] = useState([]);
 
   useEffect(() => {
-    setItemList(); // IMPORTS ITEMS FROM JSON FILE AND ADDS TO STATE
+    setItemList(productData);
   }, []);
 
   const addToBasket = itemId => {
