@@ -16,9 +16,9 @@ const App = () => {
     setItemList(productData);
   }, []);
 
-  const addToBasket = itemId => {
-    const addedItem = itemList.find(item => item.id === itemId);
-    setItemsInBasket(prevState => [...prevState, addedItem]);
+  const addToBasket = (itemId) => {
+    const addedItem = itemList.find((item) => item.id === itemId);
+    setItemsInBasket((prevState) => [...prevState, addedItem]);
   };
 
   return (
@@ -27,10 +27,15 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/sustainable" element={<ProductListing itemList={itemList} />} />
+          <Route
+            path="/sustainable"
+            element={<ProductListing itemList={itemList} />}
+          />
           <Route
             path="/sustainable/:id"
-            element={<ItemDetail itemList={itemList} addToBasket={addToBasket} />}
+            element={
+              <ItemDetail itemList={itemList} addToBasket={addToBasket} />
+            }
           />
         </Routes>
       </main>
