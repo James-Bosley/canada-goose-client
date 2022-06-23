@@ -1,0 +1,119 @@
+@use "./colors" as *;
+@use "./breakpoints" as *;
+
+// Typeface imports, with fallback options.
+// The .ttf fonts matched the mockups more closely, so those are the primary choice.
+
+@font-face {
+  font-family: "Titillum";
+  src: url("../../assets/fonts/TitilliumWeb-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Titillum";
+  src: url("../../assets/fonts/TitilliumWeb-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+}
+
+// Define site wide primary font here. Further web-safe fallbacks set.
+
+$primary-font: "Titillum", "Verdana", sans-serif;
+
+// Creates fonts with a mobile first context.
+
+@mixin page-header($color: $primary-color-dark) {
+  font-family: $primary-font;
+  color: $color;
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+
+  @include media-tablet {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+}
+
+@mixin sub-header($color: $primary-color-dark) {
+  font-family: $primary-font;
+  color: $color;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.8rem;
+
+  @include media-tablet {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+}
+
+@mixin label-link-button($color: $primary-color-dark) {
+  font-family: $primary-font;
+  color: $color;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 2rem;
+
+  @include media-tablet {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+}
+
+@mixin table-header($color: $secondary-color-dark) {
+  font-family: $primary-font;
+  color: $color;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+
+  @include media-tablet {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+}
+
+@mixin body-large($color: $primary-color-dark) {
+  font-family: $primary-font;
+  color: $color;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+
+  @include media-tablet {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+}
+
+@mixin body-medium($color: $primary-color-dark) {
+  font-family: $primary-font;
+  color: $color;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+
+  @include media-tablet {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+}
+
+@mixin body-small($color: $primary-color-dark) {
+  font-family: $primary-font;
+  color: $color;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+
+  @include media-tablet {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+}

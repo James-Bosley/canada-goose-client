@@ -1,0 +1,26 @@
+@use "../partials/" as *;
+
+@mixin text-input {
+  @include flex(initial, center);
+  @include body-medium;
+  height: 3.6rem;
+  width: 100%;
+  padding: 0 1.6rem;
+  margin-top: 0.4rem;
+  border: 1px solid $secondary-color-light;
+  border-radius: 2rem;
+
+  @include media-tablet {
+    height: 3.8rem;
+  }
+
+  &::placeholder {
+    color: $secondary-color-dark;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    border-color: $primary-color-brand;
+  }
+}
