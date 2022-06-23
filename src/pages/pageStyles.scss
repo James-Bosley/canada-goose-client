@@ -8,5 +8,9 @@
 }
 
 .product-shop {
-  list-style: none;
+  @include media-tablet {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

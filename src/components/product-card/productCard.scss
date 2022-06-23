@@ -1,4 +1,6 @@
+@use "../../styles/partials/" as *;
 .product-card {
+  margin: 0;
   padding: 0 15px 50px 15px;
   width: 100%;
   &__model-image {
@@ -27,7 +29,11 @@
 
     &--position {
       position: absolute;
-      left: 1px;
+      left: -6rem;
     }
+  }
+
+  @include media-tablet {
+    width: 80%;
   }
 }
