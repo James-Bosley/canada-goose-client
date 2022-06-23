@@ -1,0 +1,36 @@
+@use "../partials/" as *;
+@use "sass:color";
+
+@mixin base-tag {
+  display: inline-flex;
+  align-items: center;
+  height: 2.4rem;
+  border-radius: 2rem;
+  padding: 0 0.8rem;
+
+  @include media-tablet {
+    height: 2.6rem;
+  }
+}
+
+@mixin in-stock {
+  @include base-tag;
+  background-color: color.adjust($support-color-green, $alpha: -0.93);
+
+  &::after {
+    content: "IN STOCK";
+    color: $support-color-green;
+    font-weight: 600;
+  }
+}
+
+@mixin out-stock {
+  @include base-tag;
+  background-color: color.adjust($support-color-red, $alpha: -0.93);
+
+  &::after {
+    content: "OUT OF STOCK";
+    color: $support-color-red;
+    font-weight: 600;
+  }
+}
