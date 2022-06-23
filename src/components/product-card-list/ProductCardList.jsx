@@ -5,14 +5,7 @@ const ProductCardList = () => {
   return Products.map((product) => {
     return (
       <div>
-        <ProductCard
-          model={product.model}
-          price={product.price}
-          product={product.product}
-          style={product.style}
-          colour1={product.colour1}
-          colour2={product.colour2}
-        />
+        <ProductCard product={product} />
       </div>
     );
   });

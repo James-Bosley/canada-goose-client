@@ -11,7 +11,7 @@ const Header = ({ basket }) => {
         <nav className="drop-menu__container">
           <BurgerMenu className="drop-menu">
             <NavLink to="sustainable" className="drop-menu__item">
-              Sustainable
+              Sustainability First
             </NavLink>
             <NavLink to="/" className="drop-menu__item">
               Men
@@ -21,12 +21,6 @@ const Header = ({ basket }) => {
             </NavLink>
             <NavLink to="/" className="drop-menu__item">
               Kids
-            </NavLink>
-            <NavLink to="/" className="drop-menu__item">
-              Humanature
-            </NavLink>
-            <NavLink to="/" className="drop-menu__item">
-              Our Products
             </NavLink>
             <NavLink to="/" className="drop-menu__item">
               Beyond
@@ -57,7 +51,7 @@ const Header = ({ basket }) => {
       <div className="header-bottom">
         <nav className="main-nav">
           <NavLink to="sustainable" className="main-nav__item main-nav__item--highlight">
-            Sustainable
+            Sustainability First
           </NavLink>
           <NavLink to="/" className="main-nav__item">
             Men
@@ -67,12 +61,6 @@ const Header = ({ basket }) => {
           </NavLink>
           <NavLink to="/" className="main-nav__item">
             Kids
-          </NavLink>
-          <NavLink to="/" className="main-nav__item">
-            Humanature
-          </NavLink>
-          <NavLink to="/" className="main-nav__item">
-            Our Products
           </NavLink>
           <NavLink to="/" className="main-nav__item">
             Beyond
