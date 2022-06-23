@@ -20,12 +20,12 @@ const ProductCard = ({ price, model, product, style, colour1, colour2 }) => {
           <p className="product-card__price">{price}</p>
           <img
             className="product-card__colour"
-            src={colour1}
+            src={ProductColourBlack}
             alt="product colour black"
           />
           <img
             className="product-card__colour product-card__colour--position"
-            src={colour2}
+            src={ProductColourGrey}
             alt="product colour black"
           />
         </div>
