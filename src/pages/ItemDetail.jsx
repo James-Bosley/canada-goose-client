@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import inQuotes from "../assets/icons/Group.png";
+import outQuotes from "../assets/icons/Group-2.png";
 
 const ItemDetail = ({ itemList, addToBasket }) => {
   const [item, setItem] = useState(null);
@@ -77,15 +79,21 @@ const ItemDetail = ({ itemList, addToBasket }) => {
         </div>
       </section>
 
-      <article className="product-details">
-        <div className="product-details__titles-container">
-          <h2 className="product-details__titles">Features | Materials | Reviews</h2>
-        </div>
-        <div className="product-details__container">
-          <div className="product-details__feature">Feature 1</div>
-          <div className="product-details__feature">Feature 2</div>
-          <div className="product-details__feature">Feature 3</div>
-          <div className="product-details__feature">Feature 4</div>
+      <article className="mission">
+        <div className="mission__wrapper">
+          <h2 className="mission__title">Sustainable First Features</h2>
+          <img src={inQuotes} alt="quotes" className="mission__quote-icon" />
+          <p className="mission__text">
+            Canada Goose rental is part of the Project Human Nature, here we invite you to join our
+            rental revolution with our first venture into rented fashion. With the rented option you
+            can pick and choose your most desired items to fit todays’s ever evolving lifestyles.
+            You will be supporting the mission to end fur use by 2022.
+          </p>
+          <img
+            src={outQuotes}
+            alt="quotes"
+            className="mission__quote-icon mission__quote-icon--out"
+          />
         </div>
       </article>
     </>

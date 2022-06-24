@@ -9,7 +9,7 @@ const ProductCard = props => {
         <div>
           <img className="product-card__model-image" src={model} alt="clothes model" />
 
-          <h2 className="product-card__subtitle">{product} </h2>
+          <h2 className="product-card__subtitle">{product}</h2>
         </div>
       </Link>
     </div>
