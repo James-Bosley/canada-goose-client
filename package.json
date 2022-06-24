@@ -10,6 +10,7 @@
     "react-burger-menu": "^3.0.8",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.2.0",
+    "react-image-gallery": "^1.2.8",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "reactjs-popup": "^2.0.5",
@@ -39,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.17.12"
   }
 }
