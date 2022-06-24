@@ -34,7 +34,7 @@ const ItemDetail = ({ itemList, addToBasket }) => {
           <div className="detail__container">
             <div className="info__container">
               <h2 className="info__title">{item.product}</h2>
-              <p className="info__price">{item.price} GBP</p>
+              <p className="info__price">£{item.price} GBP</p>
             </div>
 
             <div className="info__container info__container--description">
