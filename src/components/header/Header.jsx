@@ -3,9 +3,11 @@ import { NavLink } from "react-router-dom";
 import logo from "../../assets/icons/cg-logo-black.svg";
 import searchIcon from "../../assets/icons/search-24px.svg";
 import bagIcon from "../../assets/icons/bag-svgrepo-com.svg";
+import Basket from "../basket/Basket";
+import Popup from "reactjs-popup";
 import "./header.scss";
 
-const Header = ({ basket }) => {
+const Header = ({ basket, clearBasket }) => {
   return (
     <header className="header">
       <div className="header__wrapper">
@@ -41,11 +43,24 @@ const Header = ({ basket }) => {
               <p className="header-top__added-text">Search</p>
             </div>
 
-            <div className="header-top__icon-container">
-              <img src={bagIcon} className="header-top__icon header-top__icon--bag" alt="basket" />
-              <p className="header-top__basket-qty">{basket.length}</p>
-              <p className="header-top__added-text">Bag</p>
-            </div>
+            <Popup
+              trigger={
+                <div className="header-top__icon-container">
+                  <img
+                    src={bagIcon}
+                    className="header-top__icon header-top__icon--bag"
+                    alt="basket"
+                  />
+                  <p className="header-top__basket-qty">{basket.length}</p>
+                  <p className="header-top__added-text">Bag</p>
+                </div>
+              }
+              position="center center"
+              modal
+              lockScroll="true"
+            >
+              {close => <Basket close={close} basket={basket} clearBasket={clearBasket} />}
+            </Popup>
           </div>
         </div>
         <div className="header-bottom">

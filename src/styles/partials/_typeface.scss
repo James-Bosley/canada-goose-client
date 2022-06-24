@@ -1,28 +1,9 @@
 @use "./colors" as *;
 @use "./breakpoints" as *;
 
-// Typeface imports, with fallback options.
-// The .ttf fonts matched the mockups more closely, so those are the primary choice.
-
-@font-face {
-  font-family: "Titillum";
-  src: url("../../assets/fonts/TitilliumWeb-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: fallback;
-}
-
-@font-face {
-  font-family: "Titillum";
-  src: url("../../assets/fonts/TitilliumWeb-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: fallback;
-}
-
 // Define site wide primary font here. Further web-safe fallbacks set.
 
-$primary-font: "Titillum", "Verdana", sans-serif;
+$primary-font: "Helvetica", "Verdana", sans-serif;
 
 // Creates fonts with a mobile first context.
 

@@ -184,6 +184,7 @@
     color: $primary-color-light;
     font-weight: 600;
     margin: 0.4rem 0;
+    cursor: pointer;
 
     @include media-desktop {
       height: 5.6rem;
@@ -203,7 +204,7 @@
 
     @include media-desktop {
       margin: 8rem 0;
-      padding: 1.2rem 0;
+      padding: 1.2rem 15rem;
     }
   }
 
@@ -219,6 +220,7 @@
       @include flex(space-between, initial, wrap);
       max-width: 120rem;
       margin: 0 auto;
+      padding: 0 15rem;
     }
   }
 

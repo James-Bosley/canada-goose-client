@@ -11,8 +11,13 @@ const ItemDetail = ({ itemList, addToBasket }) => {
     setItem(displayedItem);
   }, [id, itemList]);
 
+  let selected = null;
   const handleSelectSize = e => {
-    e.target.classList.toggle("info__size-text--selected");
+    if (selected) {
+      selected.classList.remove("info__size-text--selected");
+    }
+    e.target.classList.add("info__size-text--selected");
+    selected = e.target;
   };
 
   if (!item) return;
@@ -29,7 +34,7 @@ const ItemDetail = ({ itemList, addToBasket }) => {
           <div className="detail__container">
             <div className="info__container">
               <h2 className="info__title">{item.product}</h2>
-              <p className="info__price">{item.price} GBP</p>
+              <p className="info__price">£{item.price} GBP</p>
             </div>
 
             <div className="info__container info__container--description">
