@@ -1,12 +1,5 @@
 @use "../styles/partials/" as *;
 
-.hero {
-  @include flex(center, center);
-  height: 40vh;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 2rem;
-}
-
 .product-shop {
   @include media-tablet {
     list-style: none;

@@ -6,6 +6,7 @@
   &__model-image {
     // margin: 0 67px 0 67px;
     display: block;
+    height: 100%;
     width: 65%;
     margin: 0 auto;
   }
@@ -13,6 +14,9 @@
   &__subtitle {
     font-size: 12px;
     padding-top: 1.8rem;
+    width: fit-content;
+    margin: 0 auto;
+    color: #969696;
   }
 
   &__price {
@@ -34,6 +38,10 @@
   }
 
   @include media-tablet {
-    width: 80%;
+    width: 33.3%;
+  }
+
+  @include media-desktop {
+    width: 25%;
   }
 }
