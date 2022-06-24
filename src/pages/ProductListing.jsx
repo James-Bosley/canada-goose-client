@@ -6,7 +6,11 @@ const ProductListing = ({ itemList }) => {
   return (
     <section>
       <Hero />
+
       <div className="page-container">
+        <div className="page-centre">
+          <h1 className="page-title">SUSTAINABLE KNITWEARS</h1>
+        </div>
         <div className="page-wrapper">
           <ul className="product-shop">
             {itemList.map((product) => {
