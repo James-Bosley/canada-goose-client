@@ -16,12 +16,22 @@
     min-height: 400px;
   }
 
+  @include media-desktop {
+    height: 700px;
+    min-height: 400px;
+  }
+
   &__container {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
+
+    @include media-desktop {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
   }
 
   &__header {

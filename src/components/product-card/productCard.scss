@@ -3,12 +3,19 @@
   margin: 0;
   padding: 0 15px 50px 15px;
   width: 100%;
+
+  @include media-tablet {
+  }
   &__model-image {
     // margin: 0 67px 0 67px;
     display: block;
     height: 100%;
-    width: 65%;
+    width: 80%;
     margin: 0 auto;
+
+    @include media-tablet {
+      width: 100%;
+    }
   }
 
   &__subtitle {
@@ -17,6 +24,10 @@
     width: fit-content;
     margin: 0 auto;
     color: #969696;
+
+    @include media-tablet {
+      font-size: 14px;
+    }
   }
 
   &__price {

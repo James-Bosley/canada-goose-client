@@ -12,6 +12,14 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 6rem 0 6rem;
+  }
+}
+
+.page-wrapper {
+  @include media-desktop {
+    max-width: 1280px;
+    margin: 0 auto;
   }
 }
 
