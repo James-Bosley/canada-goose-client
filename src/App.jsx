@@ -5,8 +5,8 @@ import HomePage from "./pages/HomePage";
 import ProductListing from "./pages/ProductListing";
 import ItemDetail from "./pages/ItemDetail";
 import productData from "./util/products.json";
-import "./app.scss";
 import Footer from "./components/footer/Footer";
+import "./app.scss";
 
 const App = () => {
   const [itemsInBasket, setItemsInBasket] = useState([{}, {}]);
