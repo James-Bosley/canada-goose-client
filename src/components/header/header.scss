@@ -27,6 +27,8 @@
   &__logo {
     width: 100%;
     height: 100%;
+    position: relative;
+    top: 2px;
   }
 
   &__action-container {
