@@ -1,18 +1,19 @@
 @use "../../styles/partials/" as *;
 
 .hero {
-  background: url("../../assets/images/Hero\ image.png");
+  //   background: url("../../assets/images/Hero\ image.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -15rem;
 
-  //   @include flex(center, center);
   height: 60vh;
+
   border-bottom: 1px solid #ddd;
 
   @include media-tablet {
     background-position: center;
+    min-height: 570px;
     height: 570px;
+    max-height: fit-content;
     min-height: 400px;
   }
 
@@ -28,10 +29,10 @@
     justify-content: space-around;
     height: 100%;
 
-    @include media-desktop {
-      max-width: 1280px;
-      margin: 0 auto;
-    }
+    // @include media-desktop {
+    //   max-width: 1280px;
+    //   margin: 0 auto;
+    // }
   }
 
   &__header {

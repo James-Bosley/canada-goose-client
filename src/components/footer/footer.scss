@@ -2,13 +2,9 @@
 
 .footer {
   @include flex(center, center);
-
   background-color: $primary-color-dark;
   color: $primary-color-light;
   box-shadow: 0px -2px 4px 0px $border-color;
-
-  @include media-tablet {
-  }
 
   &__mobile-image {
     width: 100%;
