@@ -107,7 +107,7 @@
     text-transform: uppercase;
 
     &--highlight {
-      color: rgb(81, 123, 202);
+      border-bottom: 1px solid $primary-color-dark;
     }
   }
 }
