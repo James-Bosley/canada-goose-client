@@ -9,7 +9,6 @@
   //   @include flex(center, center);
   height: 60vh;
   border-bottom: 1px solid #ddd;
-  margin-bottom: 5rem;
 
   @include media-tablet {
     height: 570px;
@@ -40,7 +39,7 @@
     font-weight: 700;
     font-size: 18px;
     width: fit-content;
-    margin-left: 20px;
+    margin-left: 36px;
 
     @include media-tablet {
       margin-left: 73px;
@@ -54,7 +53,7 @@
     font-size: 24px;
     width: 20rem;
     line-height: 30px;
-    margin-left: 20px;
+    margin-left: 36px;
     height: 8rem;
 
     @include media-tablet {
@@ -78,7 +77,7 @@
   &__text {
     color: white;
     width: 20rem;
-    margin-left: 20px;
+    margin-left: 36px;
     @include media-tablet {
       width: fit-content;
       margin-left: 73px;
