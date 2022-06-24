@@ -1,0 +1,89 @@
+[
+  {
+    "id": 1,
+    "model": "https://images.canadagoose.com/image/upload/w_435,c_scale,f_auto,q_auto:best/v1562617651/product-image/7003LB_811.jpg",
+    "product": "ELMVALE CREW NECK SWEATER BLACK LABEL",
+    "price": 29.0,
+    "colours": ["Black", "Coastal Grey", "Navy"],
+    "sizes": ["S", "M", "L", "XL"],
+    "stock": 12,
+    "description": "This midweight, easy-to-layer crew neck is crafted with double-knit Merino wool. It's paired with a Thermolite® interior in areas where you need insulation, while places that tend to overheat are crafted with a breathable open knit. Rib-knit cuffs with thumbhole construction round out this everyday piece."
+  },
+  {
+    "id": 2,
+    "model": "https://images.canadagoose.com/image/upload/w_435,c_scale,f_auto,q_auto:best/v1639498481/product-image/7024L1_1108.jpg",
+    "product": "SATURNA CREWNECK WORDMARK REFLECTIVE",
+    "style": "New Style | Slim",
+    "price": 45.0,
+    "colours": ["Tan/Gold"],
+    "sizes": ["XS", "S", "M", "L"],
+    "stock": 8,
+    "description": "Crafted in Italy by expert artisans, this classic crewneck is an instant wardrobe staple. Merino wool is a natural performance fiber, with thermoregulating properties that keep you warm when it's cool, and cool when it's warm. Articulated cuffs and hem ensure a perfect fit for this sweater, whether worn on its own or as an added layer of warmth."
+  },
+  {
+    "id": 3,
+    "model": "https://images.canadagoose.com/image/upload/w_435,c_scale,f_auto,q_auto:best/v1631888826/product-image/6868L_11.jpg",
+    "product": "WINDBRIDGE HOODY",
+    "style": "New Style | Slim",
+    "price": 35.0,
+    "colours": ["Red", "Pacific Blue"],
+    "sizes": ["XS", "L"],
+    "stock": 6,
+    "description": "This versatile midweight Merino wool hooded sweater features Thermal Mapping® to maximize element protection and breathability in transitional weather. Strategically placed wind-resistant panels at the hood, front yoke and upper back keep cold breezes from cutting through."
+  },
+  {
+    "id": 4,
+    "model": "https://images.canadagoose.com/image/upload/w_480,c_scale,f_auto,q_auto:best/v1633524923/product-image/6934L_67.jpg",
+    "product": "WINDBRIDGE FULL ZIP JUMPER BLACK LABEL",
+    "style": "New Style | Slim",
+    "price": 19.0,
+    "colours": ["Navy"],
+    "sizes": ["2XS", "XS"],
+    "stock": 2,
+    "description": "Embrace the elements wearing an exceptionally crafted sweater in durable fabric complemented by ultra-fine Merino wool. Reinforced collar, that lends an extra layer of defense against high winds and unpredictable weather. Thermal Mapping® technology under the arms and along the upper back helps to promote temperature moderation and airflow."
+  },
+  {
+    "id": 5,
+    "model": "https://images.canadagoose.com/image/upload/w_435,c_scale,f_auto,q_auto:best/v1609258598/product-image/8807LC_11.jpg",
+    "product": "WOMEN'S LOGO SWEATER FOR ANGEL CHEN",
+    "style": "New Style | Slim",
+    "price": 49.0,
+    "colours": ["Black", "North Star White", "Red", "Boreal Blue"],
+    "sizes": ["2XS", "XS", "S", "M"],
+    "stock": 12,
+    "description": "Keep your core warm with this exceptionally crafted, Italian-made sweater. Ultra-fine Merino wool promotes warmth, breathability and moisture regulation when you need it most acting as the ideal base layer."
+  },
+  {
+    "id": 6,
+    "model": "https://images.canadagoose.com/image/upload/w_435,c_scale,f_auto,q_auto:best/v1639498798/product-image/6802LCB_1142.jpg",
+    "product": "HYBRIDGE QUILTED KNIT HOODY REFLECTIVE",
+    "style": "New Style | Slim",
+    "price": 75.0,
+    "colours": ["Cottongrass/Tan Heather"],
+    "sizes": ["S", "M", "L", "XL"],
+    "stock": 4,
+    "description": "Designed for transitional weather and layering, this midweight Merino wool Hoody features Thermal Mapping® to maximize warmth and breathability. Strategically placed down-filled hood, front body and upper back with diamond-quilt detail add essential warmth where you need it most."
+  },
+  {
+    "id": 7,
+    "model": "https://images.canadagoose.com/image/upload/w_1333,c_scale,f_auto,q_auto:best/v1631648408/product-image/7400L_25.jpg",
+    "product": "MUSKOKA CREWNECK SWEATER",
+    "style": "New Style | Slim",
+    "price": 25.0,
+    "colours": ["Black", "White", "Stone Heather"],
+    "sizes": ["XS", "S"],
+    "stock": 14,
+    "description": "Designed for all day comfort and softness, the medium weight Muskoka Crewneck Sweater is an excellent layering piece for year-round warmth. Made with 100% Organic Cotton, selected by our designers for reduced water consumption and overall footprint, supporting our goal of keeping the planet cold and the people on it warm."
+  },
+  {
+    "id": 8,
+    "model": "https://images.canadagoose.com/image/upload/w_435,c_scale,f_auto,q_auto:best/v1533932338/product-image/6900L_67.jpg",
+    "product": "WOMEN'S HYBRIDGE QUILTED KNIT DOWN HOODY BLACK LABEL",
+    "style": "New Style | Slim",
+    "price": 65.0,
+    "colours": ["Navy"],
+    "sizes": ["S", "M", "L", "XL"],
+    "stock": 24,
+    "description": "When it comes to seasonal layering, our expertise in down-filled warmth is the perfect complement to an ultra-fine Merino wool sweater. This quilt-through, fitted silhouette features a lightweight, down-filled hood and a built-up collar to block chilly winds from getting in. It's finished with Thermal Mapping® technology at the centre back, sides and under the arms for natural temperature moderation and improved breathability."
+  }
+]

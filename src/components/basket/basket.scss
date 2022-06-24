@@ -1,0 +1,100 @@
+@use "../../styles/partials/" as *;
+
+.basket {
+  width: 35rem;
+  background-color: $primary-color-light;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 5px $border-color;
+  border: 1px solid $border-color;
+  border-radius: 2px;
+  z-index: 1;
+
+  &__header {
+    padding: 3.4rem 0 2.8rem 0;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+  }
+
+  &__header-text {
+    text-align: center;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    font-family: "Bodoni 72";
+  }
+
+  &__sub-header {
+    text-align: center;
+
+    &--underline {
+      text-decoration: underline;
+    }
+  }
+
+  &__contents {
+    @include flex(initial, center, initial, column);
+    padding: 0.8rem 1.6rem;
+    height: 50rem;
+    overflow-y: scroll;
+    list-style: none;
+  }
+
+  &__cta-container {
+    background: #e8e8e8;
+    box-shadow: 0 0 5px $border-color;
+    padding: 1.6rem;
+  }
+
+  &__total {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+  }
+
+  &__submit {
+    width: 65%;
+    height: 5rem;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    background-color: $primary-color-dark;
+    text-transform: uppercase;
+    color: $primary-color-light;
+    font-weight: 600;
+    display: block;
+    margin: 1.4rem auto;
+    cursor: pointer;
+  }
+
+  &__text {
+    text-align: center;
+    @include body-small(#969696);
+  }
+}
+
+.bskt-item {
+  margin: 1.6rem 0;
+
+  &__image {
+    display: block;
+    width: 80%;
+    margin: 0.8rem auto;
+  }
+
+  &__title {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__info {
+    text-align: center;
+  }
+}

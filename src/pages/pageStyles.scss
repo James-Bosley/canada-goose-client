@@ -1,0 +1,277 @@
+@use "../styles/partials/" as *;
+
+.product-shop {
+  @include media-tablet {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 6rem 0 6rem;
+    padding-top: 3rem;
+  }
+}
+
+.page-wrapper {
+  @include media-desktop {
+    max-width: 160rem;
+    margin: 0 auto;
+  }
+}
+
+.page-centre {
+  max-width: 160rem;
+  margin: 0 auto;
+}
+
+.page-container {
+  background: #f5f5f5;
+  padding: 5rem 0;
+}
+
+.page-title {
+  margin: 0 auto;
+  width: fit-content;
+  color: #969696;
+  font-size: 16px;
+  margin-bottom: 3rem;
+
+  @include media-tablet {
+    margin-left: 7.1rem;
+    margin-bottom: 0;
+    padding-left: 0.4rem;
+  }
+}
+
+.detail {
+  max-width: 120rem;
+  margin: 0 auto;
+
+  @include media-desktop {
+    @include flex;
+  }
+
+  &__wrapper {
+    padding: 2.4rem 3.6rem;
+    margin-bottom: 3.6rem;
+
+    @include media-desktop {
+      padding: 3.6rem 15rem;
+      margin-bottom: 8rem;
+    }
+  }
+
+  &__image-container {
+    width: 100%;
+    margin-bottom: 1.2rem;
+
+    @include media-tablet {
+      display: block;
+      width: 60%;
+      margin: 2rem auto;
+    }
+
+    @include media-desktop {
+      max-width: 38rem;
+      margin: 0 6rem 0 0;
+    }
+  }
+
+  &__image-message {
+    @include body-medium($primary-color-mid);
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  &__container {
+    @include media-tablet {
+      width: 75%;
+      margin: 2rem auto;
+    }
+
+    @include media-desktop {
+      @include flex(space-between, initial, initial, column);
+      margin: 1.4rem 0 0 0;
+    }
+  }
+}
+
+.info {
+  &__container {
+    padding: 0.8rem 0;
+
+    @include media-desktop {
+      border-bottom: 1px solid $border-color;
+
+      &--description {
+        @include flex(initial, center);
+        flex-grow: 1;
+      }
+
+      &--color {
+        @include flex(center, initial, initial, column);
+        flex-grow: 1;
+      }
+    }
+  }
+
+  &__price {
+    @include body-large;
+    font-weight: 700;
+
+    @include media-desktop {
+      margin: 1rem 0;
+    }
+  }
+
+  &__list {
+    list-style: none;
+
+    &--sizes {
+      @include flex(space-between);
+      width: 100%;
+
+      @include media-desktop {
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  &__colors-title {
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+  }
+
+  &__sizes-container {
+    padding: 0.8rem 0;
+
+    @include media-desktop {
+      padding: 2.4rem 0;
+    }
+  }
+
+  &__sizes-title {
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+  }
+
+  &__size-text {
+    @include flex(center, center);
+    width: 4.7rem;
+    height: 4.7rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.6rem;
+
+    @include media-desktop {
+      margin-right: 2rem;
+    }
+
+    &:hover {
+      color: $primary-color-dark;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &--selected {
+      color: $primary-color-light;
+      background-color: $primary-color-dark;
+
+      &:hover {
+        color: $primary-color-light;
+        background-color: $primary-color-dark;
+      }
+    }
+  }
+
+  &__cta-container {
+    padding: 0.8rem 0;
+
+    @include media-desktop {
+      padding-bottom: 0;
+    }
+  }
+
+  &__cta-button {
+    width: 100%;
+    height: 4rem;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    background-color: $primary-color-dark;
+    text-transform: uppercase;
+    color: $primary-color-light;
+    font-weight: 600;
+    margin: 0.4rem 0;
+    cursor: pointer;
+
+    @include media-desktop {
+      height: 5.6rem;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.mission {
+  border-top: 1px solid $border-color;
+  padding: 6rem 3.6rem;
+
+  @include media-desktop {
+    padding: 10rem 0;
+  }
+
+  &__wrapper {
+    @include flex(initial, initial, initial, column);
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  &__title {
+    width: 75%;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    @include media-desktop {
+      width: unset;
+      font-size: 3rem;
+    }
+  }
+
+  &__text {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+    text-align: center;
+
+    @include media-desktop {
+      width: 80%;
+      line-height: 5.7rem;
+      font-size: 2.6rem;
+    }
+  }
+
+  &__quote-icon {
+    height: 4rem;
+    width: min-content;
+    margin: 4rem 0 6rem 0;
+
+    @include media-desktop {
+      height: 10rem;
+      margin: 5.9rem 0 13rem 0;
+    }
+
+    &--out {
+      margin: 6rem 0 0 0;
+      align-self: flex-end;
+
+      @include media-desktop {
+        margin: 13rem 0 5.9rem 0;
+      }
+    }
+  }
+}

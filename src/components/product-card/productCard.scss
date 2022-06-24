@@ -1,0 +1,60 @@
+@use "../../styles/partials/" as *;
+.product-card {
+  margin: 0;
+  padding: 0 15px 50px 15px;
+  width: 100%;
+  // :nth-child(0) {
+  //   padding-top: 5rem;
+  // }
+  @include media-tablet {
+  }
+  &__model-image {
+    // margin: 0 67px 0 67px;
+    display: block;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+
+    @include media-tablet {
+      width: 100%;
+    }
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    padding-top: 1.8rem;
+    text-align: center;
+    margin: 0 auto;
+    color: #969696;
+
+    @include media-tablet {
+      font-size: 14px;
+    }
+  }
+
+  &__price {
+    font-size: 12px;
+  }
+
+  &__style {
+    font-size: 12px;
+  }
+
+  &__colour {
+    height: 2rem;
+    width: fit-content;
+
+    &--position {
+      position: absolute;
+      left: -6rem;
+    }
+  }
+
+  @include media-tablet {
+    width: 33.3%;
+  }
+
+  @include media-desktop {
+    width: 25%;
+  }
+}

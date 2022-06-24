@@ -1,0 +1,214 @@
+@use "../../styles/partials/" as *;
+@use "sass:color";
+
+.header {
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0px 2px 5px $border-color;
+
+  &__wrapper {
+    max-width: 160rem;
+    margin: 0 auto;
+  }
+}
+
+.header-top {
+  @include flex(space-between, center);
+  width: 100%;
+  padding: 3.2rem 3.6rem 2rem 3.6rem;
+
+  &__logo-container {
+    width: 19rem;
+
+    @include media-desktop {
+      width: 22rem;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 2px;
+  }
+
+  &__action-container {
+    @include flex(flex-end);
+
+    @include media-desktop {
+      width: 10%;
+    }
+  }
+
+  &__spacer-div {
+    display: none;
+
+    @include media-desktop {
+      display: block;
+      width: 10%;
+    }
+  }
+
+  &__icon-container {
+    @include flex(initial, center);
+    position: relative;
+
+    &:last-child {
+      margin-left: 0.6rem;
+
+      @include media-desktop {
+        margin-left: 6.4rem;
+      }
+    }
+  }
+
+  &__icon {
+    height: 2.4rem;
+  }
+
+  &__added-text {
+    display: none;
+
+    @include media-desktop {
+      display: block;
+      text-transform: uppercase;
+      @include body-small($primary-color-mid);
+      font-weight: 600;
+      margin-left: 0.8rem;
+    }
+  }
+
+  &__basket-qty {
+    position: absolute;
+    @include body-small($primary-color-light);
+    top: 6px;
+    left: 8.5px;
+  }
+}
+
+.header-bottom {
+  display: none;
+
+  @include media-desktop {
+    display: block;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+}
+
+.main-nav {
+  @include flex(space-evenly);
+  margin: 0 auto;
+  width: 42%;
+
+  &__item {
+    margin: 0.4rem 0.8rem;
+    @include body-large;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &--highlight {
+      border-bottom: 1px solid $primary-color-dark;
+    }
+  }
+}
+
+.drop-menu {
+  width: 100%;
+  height: 100%;
+
+  &__container {
+    width: 4rem;
+    height: 4rem;
+    padding: 0.8rem 0;
+
+    @include media-desktop {
+      display: none;
+    }
+  }
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  left: 0rem;
+  top: 0rem;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+  height: 1px !important;
+
+  &:nth-child(1) {
+    top: 20% !important;
+  }
+
+  &:nth-child(2) {
+    top: 40% !important;
+  }
+
+  &:nth-child(3) {
+    top: 60% !important;
+  }
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 27% !important;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: $primary-color-light;
+  padding: 0.8rem;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #fff !important;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  color: #000;
+  margin-bottom: 0.4rem;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: transparent !important;
+}
+
+.popup-overlay {
+  background-color: color.adjust($primary-color-dark, $alpha: -0.5);
+}

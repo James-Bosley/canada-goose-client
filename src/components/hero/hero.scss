@@ -1,0 +1,89 @@
+@use "../../styles/partials/" as *;
+
+.hero {
+  //   background: url("../../assets/images/Hero\ image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 60vh;
+
+  border-bottom: 1px solid #ddd;
+
+  @include media-tablet {
+    background-position: center;
+    min-height: 570px;
+    height: 570px;
+    max-height: fit-content;
+    min-height: 400px;
+  }
+
+  @include media-desktop {
+    height: 700px;
+    min-height: 400px;
+  }
+
+  &__container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+
+    // @include media-desktop {
+    //   max-width: 1280px;
+    //   margin: 0 auto;
+    // }
+  }
+
+  &__header {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 700;
+    font-size: 18px;
+    width: fit-content;
+    margin-left: 36px;
+
+    @include media-tablet {
+      margin-left: 73px;
+      font-size: 24px;
+      margin-top: 4rem;
+    }
+  }
+
+  &__subheader {
+    color: white;
+    font-size: 24px;
+    width: 20rem;
+    line-height: 30px;
+    margin-left: 36px;
+    height: 8rem;
+
+    @include media-tablet {
+      margin-left: 73px;
+
+      font-size: 30px;
+      line-height: 50px;
+      width: 30rem;
+    }
+
+    @include media-desktop {
+      margin-left: 73px;
+
+      font-size: 50px;
+      line-height: 50px;
+      width: 50rem;
+    }
+    font-weight: 400;
+  }
+
+  &__text {
+    color: white;
+    width: 20rem;
+    margin-left: 36px;
+    @include media-tablet {
+      width: fit-content;
+      margin-left: 73px;
+      margin-bottom: 3rem;
+    }
+  }
+}
