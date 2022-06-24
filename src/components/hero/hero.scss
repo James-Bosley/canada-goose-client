@@ -7,9 +7,9 @@
   background-position: center;
 
   //   @include flex(center, center);
-  height: 40vh;
+  height: 60vh;
   border-bottom: 1px solid #ddd;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 
   @include media-tablet {
     height: 570px;
@@ -42,11 +42,20 @@
   &__subheader {
     color: white;
     font-size: 24px;
-    width: fit-content;
+    width: 20rem;
+    line-height: 30px;
     margin-left: 20px;
     height: 8rem;
 
     @include media-tablet {
+      margin-left: 73px;
+
+      font-size: 30px;
+      line-height: 50px;
+      width: 30rem;
+    }
+
+    @include media-desktop {
       margin-left: 73px;
 
       font-size: 50px;
@@ -58,9 +67,10 @@
 
   &__text {
     color: white;
-    width: fit-content;
+    width: 20rem;
     margin-left: 20px;
     @include media-tablet {
+      width: fit-content;
       margin-left: 73px;
       margin-bottom: 3rem;
     }
