@@ -1,7 +1,0 @@
-@use "../../styles/partials/" as *;
-
-.product-card-list {
-  @include media-tablet {
-    display: flex;
-  }
-}
