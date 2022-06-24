@@ -41,7 +41,7 @@
     @include flex(initial, center, initial, column);
     padding: 0.8rem 1.6rem;
     height: 50rem;
-    overflow: scroll;
+    overflow-y: scroll;
     list-style: none;
   }
 
