@@ -2,19 +2,24 @@
 
 .header {
   border-bottom: 1px solid #ddd;
+  box-shadow: 0px 2px 5px $border-color;
+
+  &__wrapper {
+    max-width: 160rem;
+    margin: 0 auto;
+  }
 }
 
 .header-top {
   @include flex(space-between, center);
   width: 100%;
-  padding: 0.5rem 2rem;
+  padding: 3.2rem 3.6rem 2rem 3.6rem;
 
   &__logo-container {
     width: 20rem;
-    height: 4rem;
 
     @include media-desktop {
-      width: 26rem;
+      width: 22rem;
     }
   }
 
@@ -41,19 +46,39 @@
   }
 
   &__icon-container {
-    width: 2rem;
-    height: 2rem;
+    @include flex(initial, center);
     position: relative;
 
     &:last-child {
-      margin-left: 2.4rem;
+      margin-left: 1.2rem;
+
+      @include media-desktop {
+        margin-left: 6.4rem;
+      }
+    }
+  }
+
+  &__icon {
+    height: 2.4rem;
+  }
+
+  &__added-text {
+    display: none;
+
+    @include media-desktop {
+      display: block;
+      text-transform: uppercase;
+      @include body-small($primary-color-mid);
+      font-weight: 600;
+      margin-left: 0.8rem;
     }
   }
 
   &__basket-qty {
     position: absolute;
-    top: 0;
-    left: 4px;
+    @include body-small($primary-color-light);
+    top: 6px;
+    left: 8.5px;
   }
 }
 
@@ -63,22 +88,23 @@
   @include media-desktop {
     display: block;
     width: 100%;
-    padding-bottom: 0.8rem;
+    padding-bottom: 2rem;
   }
 }
 
 .main-nav {
   @include flex(space-evenly);
   margin: 0 auto;
-  width: 45%;
+  width: 42%;
 
   &__item {
     margin: 0.4rem 0.8rem;
+    @include body-large;
     font-weight: 600;
     text-transform: uppercase;
 
     &--highlight {
-      color: $primary-color-brand;
+      color: rgb(81, 123, 202);
     }
   }
 }
@@ -152,7 +178,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: $background-color-light;
+  background: $primary-color-light;
   padding: 0.8rem;
   font-size: 1.15em;
 }

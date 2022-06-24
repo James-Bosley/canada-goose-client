@@ -6,7 +6,7 @@ const ProductCard = (props) => {
   console.log(id);
   return (
     <div className="product-card">
-      <Link to={`/${id}`}>
+      <Link to={`${id}`}>
         <div>
           <img
             className="product-card__model-image"
