@@ -1,18 +1,14 @@
 import "./productCard.scss";
 import { Link } from "react-router-dom";
 
-const ProductCard = (props) => {
+const ProductCard = props => {
   const { price, model, product, style, colour1, colour2, id } = props.product;
-  console.log(id);
+  // console.log(id);
   return (
     <div className="product-card">
       <Link to={`${id}`}>
         <div>
-          <img
-            className="product-card__model-image"
-            src={model}
-            alt="clothes model"
-          />
+          <img className="product-card__model-image" src={model} alt="clothes model" />
 
           <h2 className="product-card__subtitle">{product} </h2>
           {/* <p className="product-card__style">{style}</p>
