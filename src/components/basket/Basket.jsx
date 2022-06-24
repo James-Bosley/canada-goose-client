@@ -1,4 +1,3 @@
-import ProductCard from "../product-card/ProductCard";
 import closeIcon from "../../assets/icons/close-24px.svg";
 import toast from "react-hot-toast";
 import "./basket.scss";
