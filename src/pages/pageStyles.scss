@@ -14,3 +14,208 @@
     flex-wrap: wrap;
   }
 }
+
+.detail {
+  max-width: 120rem;
+  margin: 0 auto;
+
+  @include media-desktop {
+    @include flex;
+  }
+
+  &__wrapper {
+    padding: 2.4rem 3.6rem;
+    margin-bottom: 3.6rem;
+
+    @include media-desktop {
+      padding: 3.6rem 15rem;
+      margin-bottom: 8rem;
+    }
+  }
+
+  &__image-container {
+    width: 100%;
+    margin-bottom: 1.2rem;
+
+    @include media-tablet {
+      display: block;
+      width: 60%;
+      margin: 2rem auto;
+    }
+
+    @include media-desktop {
+      max-width: 38rem;
+      margin: 0 6rem 0 0;
+    }
+  }
+
+  &__image-message {
+    @include body-medium($primary-color-mid);
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  &__container {
+    @include media-tablet {
+      width: 75%;
+      margin: 2rem auto;
+    }
+
+    @include media-desktop {
+      @include flex(space-between, initial, initial, column);
+      margin: 1.4rem 0 0 0;
+    }
+  }
+}
+
+.info {
+  &__container {
+    padding: 0.8rem 0;
+
+    @include media-desktop {
+      border-bottom: 1px solid $border-color;
+
+      &--description {
+        @include flex(initial, center);
+        flex-grow: 1;
+      }
+
+      &--color {
+        @include flex(center, initial, initial, column);
+        flex-grow: 1;
+      }
+    }
+  }
+
+  &__price {
+    @include body-large;
+    font-weight: 700;
+
+    @include media-desktop {
+      margin: 1rem 0;
+    }
+  }
+
+  &__list {
+    list-style: none;
+
+    &--sizes {
+      @include flex(space-between);
+      width: 100%;
+
+      @include media-desktop {
+        width: 55%;
+      }
+    }
+  }
+
+  &__colors-title {
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+  }
+
+  &__sizes-container {
+    padding: 0.8rem 0;
+
+    @include media-desktop {
+      padding: 2.4rem 0;
+    }
+  }
+
+  &__sizes-title {
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+  }
+
+  &__size-text {
+    @include flex(center, center);
+    width: 4.7rem;
+    height: 4.7rem;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid $primary-color-mid;
+    }
+
+    &--selected {
+      color: $primary-color-light;
+      background-color: $primary-color-dark;
+
+      &:hover {
+        border: 1px solid $primary-color-dark;
+      }
+    }
+  }
+
+  &__cta-container {
+    padding: 0.8rem 0;
+
+    @include media-desktop {
+      padding-bottom: 0;
+    }
+  }
+
+  &__cta-button {
+    width: 100%;
+    height: 4rem;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    background-color: $primary-color-dark;
+    text-transform: uppercase;
+    color: $primary-color-light;
+    font-weight: 600;
+    margin: 0.4rem 0;
+
+    @include media-desktop {
+      height: 5.6rem;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.product-details {
+  &__titles-container {
+    width: 100%;
+    padding: 1.2rem 3.6rem;
+    border: 1px solid $border-color;
+    box-shadow: 0px 0px 6px 1px $border-color;
+    margin: 3.6rem 0;
+
+    @include media-desktop {
+      margin: 8rem 0;
+      padding: 1.2rem 0;
+    }
+  }
+
+  &__titles {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  &__container {
+    padding: 0 3.6rem;
+
+    @include media-desktop {
+      @include flex(space-between, initial, wrap);
+      max-width: 120rem;
+      margin: 0 auto;
+    }
+  }
+
+  &__feature {
+    min-height: 10rem;
+    margin-bottom: 4rem;
+
+    @include media-desktop {
+      width: 45%;
+    }
+  }
+}

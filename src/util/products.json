@@ -2,30 +2,35 @@
   {
     "id": 1,
     "model": "https://images.canadagoose.com/image/upload/w_435,c_scale,f_auto,q_auto:best/v1631797559/product-image/7402M_717.jpg",
-
     "product": "MEN'S HURON PANT",
     "style": "New Style | Slim",
-    "price": "£195.00",
-    "colour1": "https://images.canadagoose.com/image/upload/w_104,h_26,c_scale,q_auto/v1557415280/product-swatch/61.svg",
-    "colour2": "../../assets/images/product-colour-grey.svg"
+    "price": "£192.00",
+    "colours": ["Black", "Stone Heather"],
+    "sizes": ["2XS", "XS", "S", "M", "L", "XL"],
+    "stock": 24,
+    "description": "Step into comfort with the Men’s Huron Pant. Made from 100% Organic Cotton for reduced water use, it’s designed for style and sustainability. Great for daily wear, the pant features a rib-knit waist and cuffs for a tailored fit and added comfort. Canada Goose branded drawstring adjusts to fit."
   },
   {
     "id": 2,
     "model": "https://images.canadagoose.com/image/upload/w_435,c_scale,f_auto,q_auto:best/v1631797559/product-image/7402M_717.jpg",
     "product": "MEN'S HURON PANT",
     "style": "New Style | Slim",
-    "price": "£195.00",
-    "colour1": "../../assets/images/product-colour-black.svg",
-    "colour2": "../../assets/images/product-colour-grey.svg"
+    "price": "£193.00",
+    "colours": ["Black", "Stone Heather"],
+    "sizes": ["2XS", "XS", "S", "M", "L", "XL"],
+    "stock": 8,
+    "description": "Step into comfort with the Men’s Huron Pant. Made from 100% Organic Cotton for reduced water use, it’s designed for style and sustainability. Great for daily wear, the pant features a rib-knit waist and cuffs for a tailored fit and added comfort. Canada Goose branded drawstring adjusts to fit."
   },
   {
     "id": 3,
     "model": "https://images.canadagoose.com/image/upload/w_435,c_scale,f_auto,q_auto:best/v1631797559/product-image/7402M_717.jpg",
     "product": "MEN'S HURON PANT",
     "style": "New Style | Slim",
-    "price": "£195.00",
-    "colour1": "../../assets/images/product-colour-black.svg",
-    "colour2": "../../assets/images/product-colour-grey.svg"
+    "price": "£194.00",
+    "colours": ["Black", "Stone Heather"],
+    "sizes": ["2XS", "XS", "S", "M", "L", "XL"],
+    "stock": 6,
+    "description": "Step into comfort with the Men’s Huron Pant. Made from 100% Organic Cotton for reduced water use, it’s designed for style and sustainability. Great for daily wear, the pant features a rib-knit waist and cuffs for a tailored fit and added comfort. Canada Goose branded drawstring adjusts to fit."
   },
   {
     "id": 4,
@@ -33,43 +38,53 @@
     "product": "MEN'S HURON PANT",
     "style": "New Style | Slim",
     "price": "£195.00",
-    "colour1": "../../assets/images/product-colour-black.svg",
-    "colour2": "../../assets/images/product-colour-grey.svg"
+    "colours": ["Black", "Stone Heather"],
+    "sizes": ["2XS", "XS", "S", "M", "L", "XL"],
+    "stock": 1,
+    "description": "Step into comfort with the Men’s Huron Pant. Made from 100% Organic Cotton for reduced water use, it’s designed for style and sustainability. Great for daily wear, the pant features a rib-knit waist and cuffs for a tailored fit and added comfort. Canada Goose branded drawstring adjusts to fit."
   },
   {
     "id": 5,
     "model": "https://images.canadagoose.com/image/upload/w_435,c_scale,f_auto,q_auto:best/v1631797559/product-image/7402M_717.jpg",
     "product": "MEN'S HURON PANT",
     "style": "New Style | Slim",
-    "price": "£195.00",
-    "colour1": "../../assets/images/product-colour-black.svg",
-    "colour2": "../../assets/images/product-colour-grey.svg"
+    "price": "£196.00",
+    "colours": ["Black", "Stone Heather"],
+    "sizes": ["2XS", "XS", "S", "M", "L", "XL"],
+    "stock": 2,
+    "description": "Step into comfort with the Men’s Huron Pant. Made from 100% Organic Cotton for reduced water use, it’s designed for style and sustainability. Great for daily wear, the pant features a rib-knit waist and cuffs for a tailored fit and added comfort. Canada Goose branded drawstring adjusts to fit."
   },
   {
     "id": 6,
     "model": "https://images.canadagoose.com/image/upload/w_435,c_scale,f_auto,q_auto:best/v1631797559/product-image/7402M_717.jpg",
     "product": "MEN'S HURON PANT",
     "style": "New Style | Slim",
-    "price": "£195.00",
-    "colour1": "../../assets/images/product-colour-black.svg",
-    "colour2": "../../assets/images/product-colour-grey.svg"
+    "price": "£197.00",
+    "colours": ["Black", "Stone Heather"],
+    "sizes": ["2XS", "XS", "S", "M", "L", "XL"],
+    "stock": 4,
+    "description": "Step into comfort with the Men’s Huron Pant. Made from 100% Organic Cotton for reduced water use, it’s designed for style and sustainability. Great for daily wear, the pant features a rib-knit waist and cuffs for a tailored fit and added comfort. Canada Goose branded drawstring adjusts to fit."
   },
   {
     "id": 7,
     "model": "https://images.canadagoose.com/image/upload/w_435,c_scale,f_auto,q_auto:best/v1631797559/product-image/7402M_717.jpg",
     "product": "MEN'S HURON PANT",
     "style": "New Style | Slim",
-    "price": "£195.00",
-    "colour1": "../../assets/images/product-colour-black.svg",
-    "colour2": "../../assets/images/product-colour-grey.svg"
+    "price": "£198.00",
+    "colours": ["Black", "Stone Heather"],
+    "sizes": ["2XS", "XS", "S", "M", "L", "XL"],
+    "stock": 146,
+    "description": "Step into comfort with the Men’s Huron Pant. Made from 100% Organic Cotton for reduced water use, it’s designed for style and sustainability. Great for daily wear, the pant features a rib-knit waist and cuffs for a tailored fit and added comfort. Canada Goose branded drawstring adjusts to fit."
   },
   {
     "id": 8,
     "model": "https://images.canadagoose.com/image/upload/w_435,c_scale,f_auto,q_auto:best/v1631797559/product-image/7402M_717.jpg",
     "product": "MEN'S HURON PANT",
     "style": "New Style | Slim",
-    "price": "£195.00",
-    "colour1": "../../assets/images/product-colour-black.svg",
-    "colour2": "../../assets/images/product-colour-grey.svg"
+    "price": "£199.00",
+    "colours": ["Black", "Stone Heather"],
+    "sizes": ["2XS", "XS", "S", "M", "L", "XL"],
+    "stock": 2,
+    "description": "Step into comfort with the Men’s Huron Pant. Made from 100% Organic Cotton for reduced water use, it’s designed for style and sustainability. Great for daily wear, the pant features a rib-knit waist and cuffs for a tailored fit and added comfort. Canada Goose branded drawstring adjusts to fit."
   }
 ]

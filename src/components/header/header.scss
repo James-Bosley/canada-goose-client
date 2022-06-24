@@ -2,6 +2,7 @@
 
 .header {
   border-bottom: 1px solid #ddd;
+  box-shadow: 0px 2px 5px $border-color;
 
   &__wrapper {
     max-width: 160rem;
@@ -12,14 +13,13 @@
 .header-top {
   @include flex(space-between, center);
   width: 100%;
-  padding: 0.5rem 2rem;
+  padding: 3.2rem 3.6rem 2rem 3.6rem;
 
   &__logo-container {
     width: 20rem;
-    height: 4rem;
 
     @include media-desktop {
-      width: 26rem;
+      width: 22rem;
     }
   }
 
@@ -88,7 +88,7 @@
   @include media-desktop {
     display: block;
     width: 100%;
-    padding-bottom: 0.8rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -99,6 +99,7 @@
 
   &__item {
     margin: 0.4rem 0.8rem;
+    @include body-large;
     font-weight: 600;
     text-transform: uppercase;
 
