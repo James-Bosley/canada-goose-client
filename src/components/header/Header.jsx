@@ -7,7 +7,7 @@ import Basket from "../basket/Basket";
 import Popup from "reactjs-popup";
 import "./header.scss";
 
-const Header = ({ basket }) => {
+const Header = ({ basket, clearBasket }) => {
   return (
     <header className="header">
       <div className="header__wrapper">
@@ -57,9 +57,9 @@ const Header = ({ basket }) => {
               }
               position="center center"
               modal
-              lockScroll
+              lockScroll="true"
             >
-              {close => <Basket close={close} basket={basket} />}
+              {close => <Basket close={close} basket={basket} clearBasket={clearBasket} />}
             </Popup>
           </div>
         </div>

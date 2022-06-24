@@ -180,6 +180,7 @@
     color: $primary-color-light;
     font-weight: 600;
     margin: 0.4rem 0;
+    cursor: pointer;
 
     @include media-desktop {
       height: 5.6rem;

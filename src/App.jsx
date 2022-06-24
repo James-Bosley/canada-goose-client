@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 import Header from "./components/header/Header";
 import ProductListing from "./pages/ProductListing";
 import ItemDetail from "./pages/ItemDetail";
@@ -39,9 +40,14 @@ const App = () => {
     }, 500);
   };
 
+  const clearBasket = () => {
+    setItemsInBasket([]);
+  };
+
   return (
     <div>
-      <Header basket={itemsInBasket} />
+      <Toaster />
+      <Header basket={itemsInBasket} clearBasket={clearBasket} />
       <main>
         <Routes>
           <Route path="/" element={<Navigate to="/sustainable" />} />
