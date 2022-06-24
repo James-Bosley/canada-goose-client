@@ -6,6 +6,7 @@ import ProductListing from "./pages/ProductListing";
 import ItemDetail from "./pages/ItemDetail";
 import productData from "./util/products.json";
 import "./app.scss";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   const [itemsInBasket, setItemsInBasket] = useState([{}, {}]);
@@ -14,11 +15,15 @@ const App = () => {
 
   useEffect(() => {
     setItemList(productData);
+    if (localStorage.getItem("basket")) {
+      setItemsInBasket(JSON.parse(localStorage.getItem("basket")));
+    }
   }, []);
 
-  const addToBasket = (itemId) => {
-    const addedItem = itemList.find((item) => item.id === itemId);
-    setItemsInBasket((prevState) => [...prevState, addedItem]);
+  const addToBasket = itemId => {
+    const addedItem = itemList.find(item => item.id === itemId);
+    setItemsInBasket(prevState => [...prevState, addedItem]);
+    localStorage.setItem("basket", JSON.stringify([...itemsInBasket, addedItem]));
   };
 
   return (
@@ -27,18 +32,14 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route
-            path="/sustainable"
-            element={<ProductListing itemList={itemList} />}
-          />
+          <Route path="/sustainable" element={<ProductListing itemList={itemList} />} />
           <Route
             path="/sustainable/:id"
-            element={
-              <ItemDetail itemList={itemList} addToBasket={addToBasket} />
-            }
+            element={<ItemDetail itemList={itemList} addToBasket={addToBasket} />}
           />
         </Routes>
       </main>
+      <Footer />
     </div>
   );
 };
